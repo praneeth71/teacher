@@ -1,0 +1,16 @@
+.Dashboard {
+  margin-top: 0;
+}
+.top {
+  background-color: rgba(29, 21, 21, 0.884);
+  color: white;
+  border-radius: 1%;
+  margin-top: 0px;
+}
+.h1 {
+  margin-left: 10px;
+  font-weight: 400;
+}
+.p {
+  margin-left: 10px;
+}

@@ -1,0 +1,17 @@
+.Charts {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: left;
+  margin-left: 10px;
+}
+.charts {
+  margin-top: -2px;
+  height: fit-content;
+  margin-right: 0px;
+  width: 0;
+}
+.h1 {
+  margin-left: 120px;
+}
+.circle {
+  margin-left: 80px;
+}
