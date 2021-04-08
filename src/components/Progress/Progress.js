@@ -2,7 +2,7 @@ import { useState } from "react";
 import Subject from "./Subject";
 import "./Progress.css";
 
-const HomeWork = () => {
+const Progress = () => {
   const [subjects] = useState([
     { id: 1, name: "Chem 101", percent: 70},
     { id: 2, name: "Chem 201", percent: 80},
@@ -20,4 +20,4 @@ const HomeWork = () => {
   );
 };
 
-export default HomeWork;
+export default Progress;

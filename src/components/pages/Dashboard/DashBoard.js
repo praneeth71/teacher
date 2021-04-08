@@ -18,7 +18,7 @@ import CardBody from "../../Card/CardBody";
 import CardFooter from "../../Card/CardFooter";
 import Charts from "../../Charts/Charts";
 import "../../pages/Dashboard/DashBoard.css";
-import HomeWork from "../../Progress/Progress";
+import Progress from "../../Progress/Progress";
 import Classes from "../../variables/Classes";
 
 import {
@@ -30,7 +30,6 @@ import Courses from "../../Courses/Courses";
 import Calendar from "react-calendar";
 import { ImportContacts, Layers, MonetizationOn, PeopleAlt } from "@material-ui/icons";
 import SideBar from "../../SideBar/SideBar";
-import Edited from "../../EditingCourses/Edited";
 
 
 
@@ -146,7 +145,7 @@ export default function Dashboard() {
         </GridItem>
         <GridItem  xs={12} sm={12} md={4}>
           <Card style={{height:"370px"}}>
-            <HomeWork />
+            <Progress />
           </Card>
         </GridItem>
         <GridItem xs={12} >
