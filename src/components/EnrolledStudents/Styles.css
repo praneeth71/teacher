@@ -1,6 +1,27 @@
 .MuiDataGrid-colCellWrapper {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #009879;
   color: white;
   font-size: larger;
-  font-weight: 500;
+  font-weight: bold;
+  border-collapse: collapse;
+  text-align: left;
+  border-radius: 5px 5px 0 0;
+  overflow: hidden;
+  box-shadow: 0 0 0px rgba(0, 0, 0, 0.15);
+}
+
+.MuiDataGrid-viewport {
+  padding: 25px 20px;
+}
+
+.MuiDataGrid-viewport:last-of-type {
+  border-bottom: 3px solid #009879;
+}
+
+.MuiDataGrid-viewport:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.MuiDataGrid-root {
+  border-radius: 50%;
 }

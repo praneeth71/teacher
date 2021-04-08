@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import {useParams} from 'react-router-dom';
-import EnrolledStudent from "../EnrolledStudents/EnrolledStudent";
 import Loader from "../Loader/Loader";
 import axios from "../axios/axios";
 import GridItem from "../Grid/GridItem";

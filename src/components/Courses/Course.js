@@ -1,4 +1,5 @@
 import React from 'react'
+import { whiteColor } from '../../assets/jss/dashboard-react';
 import "./Courses.css";
 
 const Course = (props) => {
@@ -30,12 +31,16 @@ const Course = (props) => {
         <h3 style={{color: "brown", fontWeight: "700"}}>{author_name}</h3>
       </div>
       <div className="course-description">
-        <strong>{course_description}</strong>
+        <p>{course_description}</p>
         <p>Total Lesson: {totallesson}</p>
-        <p style={{color: "red"}}>Goals: {goals.map((item) => (
+        <p style={{color: "red"}}><strong style={{color: "black"}}>Goals: </strong>{goals.map((item) => (
           item.goals
         ))}</p>
       </div>
+      <button style={{backgroundColor: "black", borderRadius: 20}}><a href={video}>
+        <p style={{color: "white", padding: 0}}>Watch Here</p>
+      </a>
+      </button>
     </div>
   );
 };

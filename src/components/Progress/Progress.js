@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Subject from "../Homework/Subject";
-import "../Homework/HomeWork.css";
+import Subject from "./Subject";
+import "./Progress.css";
 
 const HomeWork = () => {
   const [subjects] = useState([
@@ -10,7 +10,7 @@ const HomeWork = () => {
   ]);
   return (
     <div className="box1">
-      <h1>Progress</h1>
+      <h2>Progress</h2>
       <div className="subject">
         {subjects.map((subject) => (
           <Subject key={subject.id} {...subject} />

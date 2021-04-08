@@ -5,12 +5,18 @@ import axios from "../axios/axios";
 import { useHistory } from "react-router-dom";
 import GridItem from "../Grid/GridItem";
 import GridContainer from "../Grid/GridContainer";
+import { IoAdd, IoCloseOutline, IoWarningOutline } from "react-icons/io5";
+import CreateCourses from "../CreateCourses/CreateCourses";
 import "./Courses.css";
 
 const Courses = () => {
   const [courses, setCourses] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [showInput, setShowInput] = useState(false);
+
+
   const history = useHistory();
+
 
   useEffect(() => {
     const fetchCourses = async () => {
@@ -28,6 +34,11 @@ const Courses = () => {
   return (
     <>
       <h2>My Courses</h2>
+      <div className="task-header">
+      <button onClick={() => setShowInput(!showInput)}>
+          <CreateCourses/>
+        </button>
+      </div>
       {isLoading ? (
         <Loader />
       ) : (

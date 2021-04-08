@@ -8,11 +8,9 @@ import Icon from "@material-ui/core/Icon";
 import Store from "@material-ui/icons/Store";
 import ArrowUpward from "@material-ui/icons/ArrowUpward";
 import AccessTime from "@material-ui/icons/AccessTime";
-import Accessibility from "@material-ui/icons/Accessibility";
 // core components
 import GridItem from "../../Grid/GridItem";
 import GridContainer from "../../Grid/GridContainer";
-import Table from "../../Table/Table";
 import Card from "../../Card/Card";
 import CardHeader from "../../Card/CardHeader";
 import CardIcon from "../../Card/CardIcon";
@@ -20,7 +18,8 @@ import CardBody from "../../Card/CardBody";
 import CardFooter from "../../Card/CardFooter";
 import Charts from "../../Charts/Charts";
 import "../../pages/Dashboard/DashBoard.css";
-import HomeWork from "../../Homework/HomeWork"
+import HomeWork from "../../Progress/Progress";
+import Classes from "../../variables/Classes";
 
 import {
   dailySalesChart
@@ -31,6 +30,7 @@ import Courses from "../../Courses/Courses";
 import Calendar from "react-calendar";
 import { ImportContacts, Layers, MonetizationOn, PeopleAlt } from "@material-ui/icons";
 import SideBar from "../../SideBar/SideBar";
+import Edited from "../../EditingCourses/Edited";
 
 
 
@@ -55,8 +55,10 @@ export default function Dashboard() {
         </GridItem>
       </GridContainer>
       <GridContainer>
-        <GridItem xs={12} sm={12} md={8}>
+        
+        <GridItem xs={12} sm={12} md={4}>
           <GridContainer>
+            
             <GridItem xs={12} sm={12} md={6}>
               <Card style={{marginTop:"80px"}}>
                 <CardHeader  stats icon>
@@ -103,9 +105,17 @@ export default function Dashboard() {
                 </CardHeader>
               </Card>
             </GridItem>
+            
           </GridContainer>       
         </GridItem>
         <GridItem xs={12} sm={12} md={4}>
+          <GridContainer>
+            <h2>Classes Per Week</h2>
+                <Classes />
+          </GridContainer>
+            </GridItem>
+        <GridItem xs={12} sm={12} md={4}>
+          <h2>Calendar</h2>
             <Calendar />
         </GridItem>
         <GridItem  xs={12} sm={6} md={3}>
@@ -142,6 +152,7 @@ export default function Dashboard() {
         <GridItem xs={12} >
           <Courses />
         </GridItem>
+        
       </GridContainer>
     </div>
   );
