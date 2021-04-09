@@ -9,27 +9,27 @@ import Store from "@material-ui/icons/Store";
 import ArrowUpward from "@material-ui/icons/ArrowUpward";
 import AccessTime from "@material-ui/icons/AccessTime";
 // core components
-import GridItem from "../../Grid/GridItem";
-import GridContainer from "../../Grid/GridContainer";
-import Card from "../../Card/Card";
-import CardHeader from "../../Card/CardHeader";
-import CardIcon from "../../Card/CardIcon";
-import CardBody from "../../Card/CardBody";
-import CardFooter from "../../Card/CardFooter";
-import Charts from "../../Charts/Charts";
-import "../../pages/Dashboard/DashBoard.css";
-import Progress from "../../Progress/Progress";
-import Classes from "../../variables/Classes";
+import GridItem from "../../components/Grid/GridItem";
+import GridContainer from "../../components/Grid/GridContainer";
+import Card from "../../components/Card/Card";
+import CardHeader from "../../components/Card/CardHeader";
+import CardIcon from "../../components/Card/CardIcon";
+import CardBody from "../../components/Card/CardBody";
+import CardFooter from "../../components/Card/CardFooter";
+import Charts from "../../components/Charts/Charts";
+import "./DashBoard.css";
+import Progress from "../../components/Progress/Progress";
+import Classes from "../../components/variables/Classes";
 
 import {
   dailySalesChart
-} from "../../variables/charts";
+} from "../../components/variables/charts";
 
-import styles from "../../../assets/jss/dashboard-react/dashboardStyle";
-import Courses from "../../Courses/Courses";
+import styles from "../../assets/jss/dashboard-react/dashboardStyle";
+import Courses from "../../components/Courses/Courses";
 import Calendar from "react-calendar";
 import { ImportContacts, Layers, MonetizationOn, PeopleAlt } from "@material-ui/icons";
-import SideBar from "../../SideBar/SideBar";
+import SideBar from "../../components/SideBar/SideBar";
 
 
 

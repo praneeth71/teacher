@@ -1,5 +1,5 @@
 import CloseOutlinedIcon from "@material-ui/icons/CloseOutlined";
-import "../Navbar/Navbar.css";
+import "./Navbar.css";
 
 const Notification = ({ setShowNotification }) => {
   return (
