@@ -32,11 +32,11 @@ const data = [
 export default function Classes() {
   return (
     <BarChart
-      width={650}
-      height={400}
+      width={620}
+      height={430}
       data={data}
       margin={{
-        top: 5,
+        top: 15,
         right: 15,
         left: 10,
         bottom: 5

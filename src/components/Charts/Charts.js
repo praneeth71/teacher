@@ -31,7 +31,7 @@ export default function Charts() {
   return (
       <div className="Charts">
     
-          <h2>Students</h2>
+          <h2 style={{marginTop: 15}}>Students</h2>
       <PieChart width={1200} height={300} className="circle">
       <Pie
         data={data}

@@ -5,6 +5,11 @@
   flex-direction: column;
   height: 370px;
   overflow-y: scroll;
+  box-shadow: 2px 2px 5px 3px rgba(0, 0, 0, 0.1);
+}
+
+.box1:hover {
+  box-shadow: 2px 2px 5px 6px rgba(0, 0, 0, 0.1);
 }
 
 .box1 h1 {

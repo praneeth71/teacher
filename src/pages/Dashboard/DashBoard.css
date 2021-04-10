@@ -1,16 +1,54 @@
 .Dashboard {
-  margin-top: 0;
+  margin-left: 220px;
+}
+.dashboard-items .box1 {
+  grid-column: 3/4;
+  grid-row: 2/4;
+  height: auto;
+}
+.studentCount {
+  box-shadow: 2px 2px 6px 4px rgba(0, 0, 0, 0.1);
+}
+
+.studentCount:hover {
+  box-shadow: 2px 2px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.graph {
+  box-shadow: 10px 2px 7px 6px rgba(0, 0, 0, 0.1);
+}
+.graph:hover {
+  box-shadow: 1px 2px 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-items {
+  box-shadow: 2px 2px 5px 3px rgba(24, 17, 17, 0.1);
 }
 .top {
   background-color: rgba(29, 21, 21, 0.884);
   color: white;
   border-radius: 1%;
-  margin-top: 0px;
+  margin-top: 0%;
 }
 .h1 {
+  margin-top: 15px;
   margin-left: 10px;
   font-weight: 400;
+  margin-bottom: 25px;
 }
 .p {
   margin-left: 10px;
+  margin-bottom: 13px;
+}
+
+@media (max-width: 900px) {
+  .Dashboard {
+    margin-left: 70px;
+  }
+}
+
+@media (max-width: 768px) {
+  .dashboard-items {
+    display: block;
+  }
 }

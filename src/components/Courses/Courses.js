@@ -2,11 +2,10 @@ import { useState, useEffect } from "react";
 import Course from "../Courses/Course";
 import Loader from "../Loader/Loader";
 import axios from "../axios/axios";
-import { useHistory } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
 import GridItem from "../Grid/GridItem";
 import GridContainer from "../Grid/GridContainer";
 import { IoAdd, IoCloseOutline, IoWarningOutline } from "react-icons/io5";
-import CreateCourses from "../CreateCourses/CreateCourses";
 import "./Courses.css";
 
 const Courses = () => {
@@ -33,11 +32,16 @@ const Courses = () => {
 
   return (
     <>
-      <h2>My Courses</h2>
+    <div className="myCourses">
+      <h2 style={{marginLeft: 10}}>My Courses</h2>
       <div className="task-header">
-      <button onClick={() => setShowInput(!showInput)}>
-          <CreateCourses/>
+      <Link to="/createCourse">
+      <button style={{marginBottom: 10, marginTop: 7}} onClick={() => setShowInput(!showInput)}>
+          {showInput ? <IoCloseOutline /> : <IoAdd />}
+          
         </button>
+        </Link>
+      </div>
       </div>
       {isLoading ? (
         <Loader />
@@ -53,7 +57,7 @@ const Courses = () => {
           <button
             onClick={() => history.push("/enrollment")}
             className="all-courses-btn"
-            style={{marginLeft: "460px"}}
+            style={{marginLeft: "450px", backgroundColor: "#C0C0C0", color: "blue"}}
           >
             See all
           </button>

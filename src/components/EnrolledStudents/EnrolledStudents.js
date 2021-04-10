@@ -6,6 +6,7 @@ import GridItem from "../Grid/GridItem";
 import { DataGrid } from '@material-ui/data-grid';
 import GridContainer from "../Grid/GridContainer";
 import "./Styles.css"
+import SideBar from "../SideBar/SideBar";
 
 const columns = [
     { field: 'sno', headerName: 'Sno', width: 400 },
@@ -43,19 +44,23 @@ const EnrolledStudents = () => {
 
   return (
     <>
-      <h2>My Students</h2>
+    <h2 style={{marginLeft: 15, padding: 15}}>My Students</h2>
+    <div className="students">
+      
+      <SideBar active="dashboard" />
       {isLoading ? (
         <Loader />
       ) : (
         <>
           <GridContainer>
-          <div style={{ height: 400, width: '100%' }}>
+          <div style={{ height: 400, width: '100%', color: "black" }}>
                 <DataGrid rows={enrolledStudents} columns={columns} pageSize={5} />
            </div>
           </GridContainer>
      
         </>
       )}
+      </div>
     </>
   );
 };

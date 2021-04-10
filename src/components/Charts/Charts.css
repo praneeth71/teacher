@@ -2,16 +2,15 @@
   font-family: Arial, Helvetica, sans-serif;
   text-align: left;
   margin-left: 10px;
+  box-shadow: 4px 0px 4px -2px rgba(24, 17, 17, 0.1);
 }
-.charts {
-  margin-top: -2px;
-  height: fit-content;
-  margin-right: 0px;
-  width: 0;
+.Charts:hover {
+  box-shadow: 8px 0px 8px -2px rgba(24, 17, 17, 0.1);
 }
-.h1 {
+.h2 {
   margin-left: 120px;
+  margin-top: 50px;
 }
 .circle {
-  margin-left: 80px;
+  margin-left: 70px;
 }

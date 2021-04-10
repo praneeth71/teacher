@@ -1,5 +1,4 @@
 import React from 'react'
-import { whiteColor } from '../../assets/jss/dashboard-react';
 import "./Courses.css";
 
 const Course = (props) => {
@@ -18,7 +17,7 @@ const Course = (props) => {
   } = props;
 
   return (
-    <div style={{minHeight:"250px"}}className="Course">
+    <div style={{minHeight:"250px", marginLeft: 15}}className="Course">
       <div className="course-title">
         <img style={{width: 100}} src={image} alt={course_name} />
         <div>
@@ -37,8 +36,8 @@ const Course = (props) => {
           item.goals
         ))}</p>
       </div>
-      <button style={{backgroundColor: "black", borderRadius: 20}}><a href={video}>
-        <p style={{color: "white", padding: 0}}>Watch Here</p>
+      <button style={{backgroundColor: "black", borderRadius: 20, marginLeft: 5}}><a href={video}>
+        <p style={{color: "white", maxHeight: 15, marginTop: "0%", fontSize: 15, fontStyle: "none"}}>Watch Here</p>
       </a>
       </button>
     </div>

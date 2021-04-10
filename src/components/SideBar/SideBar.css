@@ -13,12 +13,16 @@
 }
 
 .sidebar-menu {
-  height: 400px;
-  padding: 0 10px;
+  height: 500px;
   width: 100%;
   display: flex;
-  justify-content: space-evenly;
   flex-direction: column;
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.menu {
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
 .menu a {
@@ -39,32 +43,33 @@
   border-radius: 999px;
 }
 #active {
-  color: black;
+  color: rgb(0, 110, 255);
   background: rgba(0, 0, 0, 0.05);
   border-radius: 1000px;
+  margin-top: 0%;
 }
 
 .sidebar-responsive {
-  width: 50px;
   display: none;
+  margin-top: 0%;
 }
 
 @media only screen and (max-width: 900px) {
   .sidebar {
     height: 100vh;
     overflow: hidden;
-    width: 50px;
     position: fixed;
     left: 0%;
-    padding: 10px;
     border: none;
     display: flex;
     background: transparent;
+    margin-top: 0%;
   }
 
   #active {
     color: rgb(0, 110, 255);
     background: none;
+    margin-top: 0%;
   }
 
   .sidebar-responsive {
@@ -73,21 +78,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    height: 400px;
+    margin-top: 0%;
   }
   .sidebar-menu {
     display: none;
-  }
-  .menu a {
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-  }
-
-  .menu a > * {
-    margin: 0;
+    margin-top: 0%;
   }
 }

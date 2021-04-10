@@ -1,4 +1,5 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState, useEffect} from 'react';
+import {Link} from "react-router-dom";
 import axios from 'axios'
 import './CreateCourse.css'
 const CreateCourse = (props) =>{
@@ -54,19 +55,19 @@ const CreateCourse = (props) =>{
     
     return(
         <>
-            <div>
+            <div className="Form">
                 <form>
                     <div>
-                        <label>Course name</label><br/>
-                        <input type="text" name="course_name" value={course.course_name} onChange={handleChange}/>
+                        <label><h2>Course name</h2></label><br/>
+                        <input type="text" className = "form-control" name="course_name" value={course.course_name} onChange={handleChange}/>
                     </div>
                     <div className="course-desc">
-                        <label>Course description</label><br/>
+                        <label><h2>Course description</h2></label><br/>
                         <textarea type="text" name="course_description" value={course.course_description} onChange={handleChange}/>
                     </div>
                     <div>
-                        <label>Video</label><br/>
-                        <input type="url" name="video" value={course.video} onChange={handleChange}/>
+                        <label><h2>Video</h2></label><br/>
+                        <input type="url" className = "form-control" name="video" value={course.video} onChange={handleChange}/>
                     </div>
                     <div>
                         {/* <button onClick={()=>setShowGoal(true)}>+</button>
@@ -108,6 +109,11 @@ const CreateCourse = (props) =>{
                         } */}
 
                     </div>
+                    <Link to="/teacherdashboard">
+                    <button style={{backgroundColor: "#c21a1a"}}>
+                        Cancel
+                    </button>
+                    </Link>
 
                     <button onClick={handleSubmit}>
                         Add Course

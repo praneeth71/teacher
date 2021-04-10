@@ -35,11 +35,14 @@
 .Course:hover {
   box-shadow: 2px 2px 6px 3px rgba(0, 0, 0, 0.1);
 }
+.myCourses {
+  display: flex;
+}
 
 .task-header {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .task-header button {
@@ -49,6 +52,7 @@
   cursor: pointer;
   background: transparent;
   margin-top: -7px;
+  color: black;
   border-radius: 50%;
   margin-left: 5px;
   padding: 5px;
